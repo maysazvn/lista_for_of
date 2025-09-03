@@ -8,12 +8,14 @@
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
 
+    let listaJoao = [];
+
     //PROCESSAMENTO
     for(let joao of listaDeNomes){
         const nomesComJoao = prompt(`O nome ${joao} nome contém "João"? Digite S - Sim ou N - Não.`).toUpperCase().trim();
 
         if(nomesComJoao == "S"){
-            listaDeNomes.push(nomesComJoao);
+            listaJoao.push(nomesComJoao);
         }
     }
     

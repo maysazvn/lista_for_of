@@ -19,11 +19,11 @@
         }
     }
 
-    const paresCrescente = pares.sort();
-    const imparesCrescente = impares.sort();
+    const paresCrescente = pares.sort((a, b) => a - b);
+    const imparesCrescente = impares.sort((a, b) => a - b);
 
-    const paresDecrescente = pares.reverse();
-    const imparesDecrescente = impares.reverse(); //pedir ajuda
+    const paresDecrescente = pares.sort((a, b) => b - a);
+    const imparesDecrescente = impares.sort((a, b) => b - a); //pedir ajuda
 
     //SAÍDA
 

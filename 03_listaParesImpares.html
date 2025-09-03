@@ -18,11 +18,11 @@
             impares.push(numeros);
         }
     }
-    const paresCrescente = pares.sort((a, b) => a - b);
+    const paresCrescente = pares.sort((a, b) => a - b);//fazer sort nos pares crescente
     const imparesCrescente = impares.sort((a, b) => a - b);
     
-    const paresDecrescente = pares.reverse()
-    const imparesDecrescente = impares.reverse() 
+    const paresDecrescente = pares.sort((a, b) => b - a);
+    const imparesDecrescente = impares.sort((a, b) => b - a); 
     //SAÍDA
     
     alert(`Da ${listaDeNumeros.join(", ")}, os números pares são: ${pares.join(", ")}. Em ordem crescente é ${paresCrescente.join(", ")} e em decrescente é ${paresDecrescente.join(", ")}`);

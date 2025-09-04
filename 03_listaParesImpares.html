@@ -18,18 +18,15 @@
             impares.push(numeros);
         }
     }
-    const paresCrescente = pares.sort((a, b) => a - b);//fazer sort nos pares crescente
-    const imparesCrescente = impares.sort((a, b) => a - b);
     
-    const paresDecrescente = pares.sort((a, b) => b - a);
-    const imparesDecrescente = impares.sort((a, b) => b - a); 
+    let paresCrescente = [...pares].sort((a, b) => a - b);
+    let imparesCrescente = [...impares].sort((a, b) => a - b);
+    
+    let paresDecrescente = [...pares].sort((a, b) => b - a);
+    let imparesDecrescente = [...impares].sort((a, b) => b - a); 
     //SAÍDA
     
     alert(`Da ${listaDeNumeros.join(", ")}, os números pares são: ${pares.join(", ")}. Em ordem crescente é ${paresCrescente.join(", ")} e em decrescente é ${paresDecrescente.join(", ")}`);
-    alert(`Da ${listaDeNumeros}, os números ímpares são: ${impares.join(", ")}. Em ordem crescente é ${imparesCrescente.join(", ")} e em decrescente é ${imparesDecrescente.join(", ")}`);
-    console.log(`pares${pares}, \n impar${impares} \n ${paresCrescente} \n ${imparesCrescente} \n ${paresDecrescente} \n ${imparesDecrescente}  `)
+    alert(`Da ${listaDeNumeros.join(", ")}, os números ímpares são: ${impares.join(", ")}. Em ordem crescente é ${imparesCrescente.join(", ")} e em decrescente é ${imparesDecrescente.join(", ")}`);
     
-
-
-    //by: peraza
 </script>

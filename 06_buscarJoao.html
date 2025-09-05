@@ -12,15 +12,17 @@
 
     //PROCESSAMENTO
     for(let joao of listaDeNomes){
-        const nomesComJoao = prompt(`O nome ${joao} nome contém "João"? Digite S - Sim ou N - Não.`).toUpperCase().trim();
+        let tirarAcento = joao.replace("João, Joao");
 
-        if(nomesComJoao == "S"){
-            listaJoao.push(nomesComJoao);
-        }
+        let nomesComJoao = tirarAcento.includes("Joao");
+
+        if(nomesComJoao == true){
+            listaJoao.push(joao);
     }
+}
     
     //SAÍDA
 
-    alert(`Todos os nomes que contém "João" são ${listaDeNomes.join(", ")}`);
+    alert(`Todos os nomes que contém "João" são ${listaJoao.join(", ")}`);
 
 </script>

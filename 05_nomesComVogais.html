@@ -12,9 +12,9 @@
 
     //PROCESSAMENTO
     for(let nomes of listaDeNomes){
-        const vogais = prompt(`O nome ${nomes} começa com uma vogal? Digite S - Sim ou N - Não.`).toUpperCase().trim();
+        const vogais = nomes.charAt(0);
 
-        if(vogais === "S"){
+        if(vogais === "A" || vogais === "E" || vogais === "I" | vogais === "O" | vogais === "U"){
             nomesVogais.push(nomes);
         }
     }

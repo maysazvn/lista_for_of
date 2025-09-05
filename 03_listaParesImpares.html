@@ -19,14 +19,9 @@
         }
     }
     
-    let paresCrescente = [...pares].sort((a, b) => a - b);
-    let imparesCrescente = [...impares].sort((a, b) => a - b);
-    
-    let paresDecrescente = [...pares].sort((a, b) => b - a);
-    let imparesDecrescente = [...impares].sort((a, b) => b - a); 
     //SAÍDA
     
-    alert(`Da ${listaDeNumeros.join(", ")}, os números pares são: ${pares.join(", ")}. Em ordem crescente é ${paresCrescente.join(", ")} e em decrescente é ${paresDecrescente.join(", ")}`);
-    alert(`Da ${listaDeNumeros.join(", ")}, os números ímpares são: ${impares.join(", ")}. Em ordem crescente é ${imparesCrescente.join(", ")} e em decrescente é ${imparesDecrescente.join(", ")}`);
+    alert(`Da lista ${listaDeNumeros.join(", ")}, os pares em ordem crescente são ${pares.sort((a, b) => a-b).join(", ")} e em decrescente são ${pares.sort((a,b) => b-a).join(", ")}`);
+    alert(`Da lista ${listaDeNumeros.join(", ")}, os pares ordem crescente é ${impares.sort((a, b) => a-b).join(", ")} e em decrescente é ${impares.sort((a, b) => b-a).join(", ")}`);
     
 </script>

@@ -12,15 +12,12 @@
 
     //PROCESSAMENTO
     for(let joao of listaDeNomes){
-        let tirarAcento = joao.replace("João, Joao");
+        let tirarAcento = joao.replace("João", "Joao");
 
-        let nomesComJoao = tirarAcento.includes("Joao");
-
-        if(nomesComJoao == true){
+        if(tirarAcento.toUpperCase().includes("JOAO") === true){
             listaJoao.push(joao);
-    }
+    } 
 }
-    
     //SAÍDA
 
     alert(`Todos os nomes que contém "João" são ${listaJoao.join(", ")}`);
